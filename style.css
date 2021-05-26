@@ -1,0 +1,135 @@
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+#canvas2 {
+  background: #000000;
+}
+
+p {
+  background-color: #bcbcbc;
+  color: #000000;
+  position: relative;
+  font-family: arial;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+	width: auto;
+  display: block;
+}
+
+div.menu {
+  display: inline-block;
+  position: relative;
+  background-color: #565656;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+	overflow: auto;
+}
+
+#helpMenu {
+  margin-top: 10px;
+	width: 50%;
+}
+div.controls {
+  margin-right: 5px;
+  vertical-align: top;
+  height: auto;
+	width: auto;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #c9c5c5;
+}
+
+button {
+  border: none;
+	outline: none;
+  display: inline-block;
+  vertical-align: center;
+  font-size: 15px;
+  padding: 5px;
+  background-color: #1a9e20;
+  border-radius: 5px;
+  color: #FFFFFF;
+  position: relative;
+	transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+
+.help {
+  background-color: #e43838;
+	display: block;
+}
+.help:hover {
+  background-color: #f56565;
+}
+.help:active {
+  background-color: #af1313;
+}
+button:hover {
+  background-color: #2ccc33;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+button:active {
+  background-color: #06680a;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.slider {
+  -webkit-appearance: none;
+	width: 120px;
+  height: 10px;
+  border-radius: 5px;
+  background: #565656;
+  outline: none;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #1a9e20;
+  cursor: pointer;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+	transition: background 0.2s, box-shadow 0.2s;
+}
+.slider::-webkit-slider-thumb:hover {
+  background-color: #2ccc33;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+
+} 
+.slider::-webkit-slider-thumb:active {
+  background-color: #06680a;
+} 
+
+label {
+  font-family: Arial;
+}
+
+label.sliderLabel {
+  display: block;
+	width: auto;
+}
+
+.checkbox {
+  position: relative;
+	display: inline-block;
+  background-color: #ffffff;
+  border: 10px solid #000;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}

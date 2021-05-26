@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <canvas id="canvas2" style="color:black"></canvas>
+    <canvas id="canvas1"></canvas>
+    <div class="menu">
+      <div class="controls" id="resetAndClear">
+        <button id="resetButton">Reset</button>
+        <button id="clearButton">Clear</button>
+      </div>
+      <div class="controls">
+        <label for="gravitySlider" id="gravityLabel" class="sliderLabel">Gravity: 1</label>
+        <input id="gravitySlider" type="range" class="slider" step="0.001" min="0.001" max="3" value="1"></input>
+      </div>
+      <div class="controls">
+        <label for="frictionSlider" id="frictionLabel" class="sliderLabel">Friction:</label>
+        <input id="frictionSlider" type="range" class="slider" step="0.01" min="0" max="1" value="0.1"></input>
+      </div>
+      <div class="controls">
+        <label for="countSlider" id="countLabel" class="sliderLabel">Count:</label>
+        <input id="countSlider" type="range" class="slider" step="1" min="1" max="250" value="25"></input>
+      </div>
+      <div class="controls">
+				<!-- INSERT LABEL HERE -->
+				<label for ="traceCheckbox" id="traceCheckboxLabel">Trace</label>
+        <input id="traceCheckbox" type="checkbox" class="checkbox" onclick="toggleTrace()"></input>
+      </div>
+    </div>
+    <button id="helpButton" class="help">Help</button>
+    <div id="helpMenu" class="menu" style="display: none;">
+      <button id="closeHelpButton" class="help" style="margin-bottom: 10px">Close</button>
+      <p style="width: fit-content;">PHYSICS: A project by Michael Frank</p>
+      <p>
+        Hi! I'm currently a high school student taking AP Computer Science Principles. This project was a requirement for the AP Exam, but I actually really enjoyed working on it.
+      </p>
+			<p>
+				This page is intended only to be seen by those scoring my exam, but if you've somehow stumbled across it then hopefully this tab explained a few things.
+			</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
